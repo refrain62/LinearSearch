@@ -1,19 +1,21 @@
 package search.linear;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class App
 {
 	public static void main( String[] args )
 	{
 		LinearSearch linearSearch = LinearSearch.getInstance();
+		
 		int result = LinearSearch.C_NOT_FOUND;
+		int searchVal = -999;
 		
 		// 探索データの定義
 		int[] searchData = { 1, 2, 3, 4, 5 };
 
-		int searchVal = -999;
-		
 		System.out.println("Linear Search App Start!");
 		
 		// 検索データの出力
@@ -68,16 +70,29 @@ public class App
 	 */
 	private static int inputKeyValue()
 	{
-		int searchVal = -999;
-		
-		// 標準入力を使う準備
-		Scanner scanner = new Scanner(System.in);
+	    String input = null;
+	    int number = 0;
 
 		System.out.println("What is the search value of array data？");
 		
-		searchVal = scanner.nextInt();
-		
-		return searchVal;
+	    try
+	    {
+	        BufferedReader bufferedReader = new BufferedReader( new InputStreamReader( System.in ) );
+	        
+	        input = bufferedReader.readLine();
+	        
+	        number = Integer.parseInt(input);
+	    }
+	    catch( NumberFormatException ex )
+	    {
+	       System.out.println("Not a number !");
+	    }
+	    catch( IOException e )
+	    {
+	        e.printStackTrace();
+	    }
+	    
+	    return number;
 	}
 	
 	/**
