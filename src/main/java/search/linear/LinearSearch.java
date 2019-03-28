@@ -1,34 +1,34 @@
 package search.linear;
 
 /*
-•½‹ÏŒvZ—ÊF O(n)
+å¹³å‡è¨ˆç®—é‡ï¼š O(n)
 
-ƒŠƒXƒg‚Ìæ“ª‚©‚ç—v‘f‚ğæ‚èo‚·
-æ‚èo‚µ‚½—v‘f‚Ì’l‚Æ’T‚µ‚½‚¢—v‘f‚Ì’l‚ğ”äŠr‚·‚é
-Eˆê’v‚·‚ê‚Î’TõŠ®—¹
-Eˆê’v‚µ‚È‚¯‚ê‚ÎŸ‚Ì—v‘f‚ğæ‚èo‚·
+ãƒªã‚¹ãƒˆã®å…ˆé ­ã‹ã‚‰è¦ç´ ã‚’å–ã‚Šå‡ºã™
+å–ã‚Šå‡ºã—ãŸè¦ç´ ã®å€¤ã¨æ¢ã—ãŸã„è¦ç´ ã®å€¤ã‚’æ¯”è¼ƒã™ã‚‹
+ãƒ»ä¸€è‡´ã™ã‚Œã°æ¢ç´¢å®Œäº†
+ãƒ»ä¸€è‡´ã—ãªã‘ã‚Œã°æ¬¡ã®è¦ç´ ã‚’å–ã‚Šå‡ºã™
 */
 
 public class LinearSearch
 {
-  // Singleton—p
+  // Singletonç”¨
   private static LinearSearch linearSearch = new LinearSearch(); 
   
-  // Œ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡‚Ì–ß‚è’l
+  // è¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆã®æˆ»ã‚Šå€¤
   public static int C_NOT_FOUND = -1;
   
-  // ŠO•”‚©‚çƒCƒ“ƒXƒ^ƒ“ƒX‰»‚Å‚«‚È‚¢‚æ‚¤‚ÉƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ğprivate‰»
+  // å¤–éƒ¨ã‹ã‚‰ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹åŒ–ã§ããªã„ã‚ˆã†ã«ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚’privateåŒ–
   private LinearSearch()
   { 
   }
   
-  // ƒCƒ“ƒXƒ^ƒ“ƒX‚ğ•Ô‚·
+  // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã™
   public static LinearSearch getInstance()
   {
     return linearSearch;
   }
   
-  // ’TõÀs
+  // æ¢ç´¢å®Ÿè¡Œ
   public int execute(
             int[] argData,
             int argVal
@@ -37,10 +37,10 @@ public class LinearSearch
     if(   argData != null
       )
     {
-      // ƒ‹[ƒv‚Å’Tõ‚µAˆê’v‚µ‚½‚çƒCƒ“ƒfƒbƒNƒX‚ğ•Ô‚·
+      // ãƒ«ãƒ¼ãƒ—ã§æ¢ç´¢ã—ã€ä¸€è‡´ã—ãŸã‚‰ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’è¿”ã™
       for( int i = 0; i < argData.length; i++ )
       {
-        // î•ñ‚ğƒƒO‚Éo—Í
+        // æƒ…å ±ã‚’ãƒ­ã‚°ã«å‡ºåŠ›
         System.out.println( "index : " + i + " val: " + argData[ i ] );
         
         if(   argData[ i ] == argVal

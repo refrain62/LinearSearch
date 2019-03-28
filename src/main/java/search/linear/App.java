@@ -13,26 +13,26 @@ public class App
     int result = LinearSearch.C_NOT_FOUND;
     int searchVal = -999;
     
-    // ’Tõƒf[ƒ^‚Ì’è‹`
+    // æ¢ç´¢ãƒ‡ãƒ¼ã‚¿ã®å®šç¾©
     int[] searchData = { 1, 2, 3, 4, 5 };
 
     System.out.println("Linear Search App Start!");
     
-    // ŒŸõƒf[ƒ^‚Ìo—Í
+    // æ¤œç´¢ãƒ‡ãƒ¼ã‚¿ã®å‡ºåŠ›
     outputSearchData(
             searchData
             );
     
-    // ƒL[“ü—Íi”’l‚Æ‚µ‚Äj
+    // ã‚­ãƒ¼å…¥åŠ›ï¼ˆæ•°å€¤ã¨ã—ã¦ï¼‰
     searchVal = inputKeyValue();
     
-    // ’Tõ
+    // æ¢ç´¢
     result = linearSearch.execute(
                     searchData,
                     searchVal
                     );
     
-    // Œ‹‰Ê‚Ìo—Í
+    // çµæœã®å‡ºåŠ›
     outputResult(
               result,
               LinearSearch.C_NOT_FOUND
@@ -40,7 +40,7 @@ public class App
   }
 
   /**
-   * ŒŸõƒf[ƒ^‚Ìo—Í
+   * æ¤œç´¢ãƒ‡ãƒ¼ã‚¿ã®å‡ºåŠ›
    * @param argSearchData
    * @return
    */
@@ -65,7 +65,7 @@ public class App
   }
   
   /**
-   *  ƒL[“ü—Íi”’l‚Æ‚µ‚Äj
+   *  ã‚­ãƒ¼å…¥åŠ›ï¼ˆæ•°å€¤ã¨ã—ã¦ï¼‰
    * @return
    */
   private static int inputKeyValue()
@@ -73,7 +73,7 @@ public class App
       String input = null;
       int number = 0;
 
-    System.out.println("What is the search value of array dataH");
+    System.out.println("What is the search value of array dataï¼Ÿ");
     
       try
       {
@@ -96,7 +96,7 @@ public class App
   }
   
   /**
-   *  Œ‹‰Ê‚Ìo—Í
+   *  çµæœã®å‡ºåŠ›
    * @param argResult
    * @param argNotFoundValue
    */
@@ -105,13 +105,13 @@ public class App
                 int argNotFoundValue
               )
   {
-    // ’TõŒ‹‰ÊNG
+    // æ¢ç´¢çµæœNG
     if(   argNotFoundValue == argResult
       )
     {
       System.out.println("Data Not Found.");
     }
-    // ’TõOK
+    // æ¢ç´¢OK
     else
     {
       System.out.println("Data Found. Array index is " + (argResult + 1) ); 
