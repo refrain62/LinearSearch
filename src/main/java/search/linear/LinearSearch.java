@@ -40,6 +40,9 @@ public class LinearSearch
 			// ループで探索し、一致したらインデックスを返す
 			for( int i = 0; i < argData.length; i++ )
 			{
+				// 情報をログに出力
+				System.out.println( "index : " + i + " val: " + argData[ i ] );
+				
 				if(		argData[ i ] == argVal
 					)
 				{

@@ -1,8 +1,24 @@
-# LinearSearch
+# Linear Search  
+***
 
-•½‹ÏŒvZ—ÊF O(n)
+## å¹³å‡è¨ˆç®—é‡ï¼š O(n)  
+***
 
-ƒŠƒXƒg‚Ìæ“ª‚©‚ç—v‘f‚ğæ‚èo‚·
-æ‚èo‚µ‚½—v‘f‚Ì’l‚Æ’T‚µ‚½‚¢—v‘f‚Ì’l‚ğ”äŠr‚·‚é
-Eˆê’v‚·‚ê‚Î’TõŠ®—¹
-Eˆê’v‚µ‚È‚¯‚ê‚ÎŸ‚Ì—v‘f‚ğæ‚èo‚·
+* ãƒªã‚¹ãƒˆã®å…ˆé ­ã‹ã‚‰è¦ç´ ã‚’å–ã‚Šå‡ºã™  
+* å–ã‚Šå‡ºã—ãŸè¦ç´ ã®å€¤ã¨æ¢ã—ãŸã„è¦ç´ ã®å€¤ã‚’æ¯”è¼ƒã™ã‚‹  
+* ä¸€è‡´ã™ã‚Œã°æ¢ç´¢å®Œäº†  
+* ä¸€è‡´ã—ãªã‘ã‚Œã°æ¬¡ã®è¦ç´ ã‚’å–ã‚Šå‡ºã™  
+
+## å®Ÿè¡Œãƒ­ã‚°
+***
+
+Linear Search App Start!  
+Array Data is [1, 2, 3, 4, 5]  
+What is the search value of array dataï¼Ÿ  
+4  
+index : 0 val: 1  
+index : 1 val: 2  
+index : 2 val: 3  
+index : 3 val: 4  
+Data Found. Array index is 4  
+  

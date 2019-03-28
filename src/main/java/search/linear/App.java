@@ -18,7 +18,7 @@ public class App
 		String strDelimiter = "";
 		
 		// メッセージ表示
-		System.out.println("App Start!");
+		System.out.println("Linear Search App Start!");
 		System.out.print("Array Data is [");
 
 		strDelimiter = "";
